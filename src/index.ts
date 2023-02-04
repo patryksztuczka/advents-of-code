@@ -9,3 +9,7 @@ const fileLines = readline.createInterface({
   input: fileStream,
   crlfDelay: Infinity,
 });
+
+for await (const line of fileLines) {
+  console.log(line);
+}
